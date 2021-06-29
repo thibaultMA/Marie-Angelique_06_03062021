@@ -5,11 +5,11 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const helmet =require('helmet')
 
-
+require('dotenv').config()
 const userRoutes = require('./routes/user')
 const saucesRoutes = require('./routes/sauces')
 
-mongoose.connect('mongodb+srv://moi:minecraft44800@cluster0.l8win.mongodb.net/p6?retryWrites=true&w=majority',
+mongoose.connect(process.env.db,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
