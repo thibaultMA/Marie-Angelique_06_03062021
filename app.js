@@ -9,7 +9,7 @@ const helmet =require('helmet')
 const userRoutes = require('./routes/user')
 const saucesRoutes = require('./routes/sauces')
 
-mongoose.connect('mongodb+srv://moi:minecraft44800@cluster0.l8win.mongodb.net/stock?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://moi:minecraft44800@cluster0.l8win.mongodb.net/p6?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
